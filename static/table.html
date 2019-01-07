@@ -1,0 +1,8 @@
+<div ng-controller="tableController" ng-init="init()" id="ng-app" style="background-color: black">
+	<table>
+		<tr ng-repeat="row in data.data track by $index">
+			<td ng-repeat="cell in row track by $index" ng-style="cell"></td>
+		</tr>
+	</table>
+	<div id="click" ng-click="calculate()"></div>
+</div>
